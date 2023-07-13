@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rdf:RDF
+xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:foaf = "http://xmlns.com/foaf/0.1/"
+xmlns:bio = "http://purl.org/vocab/bio/0.1/">
+
+   <foaf:Person rdf:ID="ssztreja">
+      <foaf:name>Szymon Sztreja</foaf:name>
+      <foaf:gender>Male</foaf:gender>
+      <foaf:givenname>Szymon</foaf:givenname>
+      <foaf:family_name>Sztreja</foaf:family_name>
+      <foaf:homepage rdf:resource="http://szuflandia.pjwstk.edu.pl/~s26048/"/>
+      <bio:Graduation>
+         <rdf:Seq>
+            <rdf:li>
+               <foaf:Organization rdf:ID="gim11">
+                  <foaf:name>Gimnazjum nr 11 im. Lotników Polskich w Koszalinie</foaf:name>
+                  <foaf:homepage rdf:resource="http://www.sp23koszalin.pl/archiwumwydarzen/wydarzeniaszkolne17-18.htm"/>
+                  <foaf:date>23-06-2017</foaf:date>
+               </foaf:Organization>
+            </rdf:li>
+            <rdf:li>
+               <foaf:Organization rdf:ID="lic2">
+                  <foaf:name>II Liceum Ogólnokształcące im. Władysława Broniewskiego</foaf:name>
+                  <foaf:homepage rdf:resource="https://www.broniewski.edu.pl/"/>
+                  <foaf:date>11-03-2020</foaf:date>
+               </foaf:Organization>
+            </rdf:li>
+         </rdf:Seq>
+      </bio:Graduation>
+      <bio:position>student</bio:position>
+   </foaf:Person>
+
+</rdf:RDF>

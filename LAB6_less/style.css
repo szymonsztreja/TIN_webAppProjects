@@ -1,0 +1,129 @@
+.padding {
+  padding: 10px 15px 10px 15px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8c4c4;
+}
+body #container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+body #container header {
+  grid-area: 1 / 1 / 1 / 4;
+  width: 100%;
+}
+body #container header img {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #container nav {
+  grid-area: 2 / 1 / 2 / 4;
+}
+body #container nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  background-image: url("images/bg_nav.png");
+  background-size: contain;
+}
+body #container nav li {
+  display: inline;
+}
+body #container nav a {
+  padding: 0px 20px 0px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  border-right: 3px solid black;
+}
+body #container nav a:hover {
+  background-image: url("images/bg_nav_h.png");
+}
+body #container #main {
+  grid-area: 3 / 2 / 3 / 2;
+  padding: 10px 15px 10px 15px;
+  background-color: #fce4e4;
+}
+body #container #left {
+  grid-area: 3 / 1 / 3 / 1;
+  padding: 10px 15px 10px 15px;
+  background-color: #fad6d6;
+}
+body #container #important {
+  grid-area: 3 / 3 / 3 / 3;
+  padding: 0px 15px 0px 15px;
+}
+body #container #important li {
+  padding: 10px 0 10px 0px;
+  list-style-image: url("images/bullet.png");
+}
+body #container #important a {
+  font-size: 24px;
+  color: black;
+}
+body #container footer {
+  grid-area: 4 / 1 / 4 / 4;
+  background-color: #f6b2b2;
+}
+body #container footer p {
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  body #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+  }
+  body #container header {
+    grid-area: 1 / 1 / 1 / 3;
+  }
+  body #container nav {
+    grid-area: 2 / 1 / 2 / 3;
+  }
+  body #container nav a {
+    font-size: 16px;
+  }
+  body #container nav a:last-of-type {
+    border-right: none;
+  }
+  body #container #main {
+    grid-area: 3 / 1 / 3 / 3;
+  }
+  body #container #left {
+    grid-area: 4 / 1 / 4 / 1;
+  }
+  body #container #important {
+    grid-area: 4 / 2 / 4 / 2;
+  }
+  body #container footer {
+    grid-area: 5 / 1 / 5 / 3;
+  }
+}
+@media screen and (max-width: 600px) {
+  body #container {
+    display: inline-block;
+  }
+  body #container nav ul {
+    background-size: auto;
+  }
+  body #container nav a {
+    font-size: 24px;
+  }
+  body #container nav li {
+    display: block;
+    text-align: center;
+  }
+  body #container footer {
+    margin-bottom: 0px;
+  }
+  body #container footer p {
+    font-size: 24px;
+  }
+}

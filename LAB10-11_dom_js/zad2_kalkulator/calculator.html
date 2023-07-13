@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calculator-grid">
+        <div class="output">
+            <label for="outcome"></label>
+            <input type="text" id="outcome" placeholder="Wynik" disabled />
+        </div>
+        <div class="first_nm row2">
+            <label for="first_num">Pierwsza liczba</label>
+            <input type="text" id="first_num" oninput="numbersOnly(this)" />
+        </div>
+        <div class="second_nm row2">
+            <label for="second_num">Druga liczba</label>
+            <input type="text" id="second_num" oninput="numbersOnly(this)" />
+        </div>
+        <div class="operation_div row2">
+            <label for="operation">Działanie</label>
+            <select name="oper" id="operation">
+                <option value="add">Dodawanie</option>
+                <option value="sub">Odejmowanie</option>
+                <option value="mul">Mnożenie</option>
+                <option value="div">Dzielenie</option>
+            </select>
+        </div>
+        <div class="btn_div row2">
+            <button id="btn-count" onclick="count()">Oblicz</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    background-color: #444444;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 12vw);
+    grid-template-rows: 100px 100px;
+    /* 20 vierport height*/
+    margin-top: 20vh;
+    background-color: rgb(201, 201, 201);
+}
+
+.output {
+    grid-area: 1 / 1 / 1 / 5;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(84, 199, 174);
+    border-style: solid;
+    border-color: rgb(45, 146, 172);
+}
+
+.row2 {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+    border-bottom: 1px solid #505050;
+}
+
+.output input[type="text"] {
+    width: 20%;
+    font-size: 24px;
+    border: none;
+    background-color: rgb(84, 199, 174);
+    color: #333;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+select {
+    width: 75%;
+    padding: 8px;
+    font: 15px bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    width: 75%;
+    height: 80%;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #444444;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+
+.first_nm {
+    grid-area: 2 / 1 / 3 / 1;
+    border-left: 1px solid #505050;
+    ;
+}
+
+.second_nm {
+    grid-area: 2 / 2 / 3 / 2;
+}
+
+.operation_div {
+    grid-area: 2 / 3 / 3 / 3;
+}
+
+.btn_div {
+    grid-area: 2 / 4 / 3 / 4;
+    text-align: center;
+    border-right: 1px solid #505050;
+}
